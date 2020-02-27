@@ -4,46 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Import Google Icon Font-->
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/materialize.min.css">
     <title>227voyages</title>
 </head>
-<body>
-    <body id="home" class="scrollspy">
-        <div class="navbar-fixed">
-            <nav class="teal">
-                <div class="container">
-                    <div class="nav-wrapper">
-                        <a href="#home" class="brand-logo">227voyages</a>
-                        <a href="#" data-activates="mobile-nav" class="button-collapse">
-                            <i class="material-icons">menu</i>
-                        </a>
-                        <ul class="right hide-on-med-and-down">
-                            <li>
-                                <a href="#home">Home</a>
-                            </li>
-                            <li>
-                                <a href="#search">Search</a>
-                            </li>
-                            <li>
-                                <a href="#popular">Popular Places</a>
-                            </li>
-                            <li>
-                                <a href="#gallery">Gallery</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <ul class="side-nav show-on-medium-only hide-on-small-only" id="mobile-nav">
+<body id="home">
+    <!--nav-->
+    <div class="navbar-fixed ">
+        <nav class="teal">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">227voyages</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                        <i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#search">Search</a>
+                        </li>
+                        <li>
+                            <a href="#popular">Popular Places</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>           
+            </div>
+        </nav>
+    </div>
+    <!--barre nav pour mobile-->
+        <ul class="sidenav" id="mobile-demo">
             <li>
                 <a href="#home">Home</a>
             </li>
@@ -60,10 +59,10 @@
                 <a href="#contact">Contact</a>
             </li>
         </ul>
-    
-        <!-- partie des diaporama -->
-        <section class="slider">
-            <ul class="slides">
+    <content >
+        <!--debut contenaire page-->
+        <div class="slider" style="height: 400px !important;">
+            <ul class="slides" style="height: 400px !important;">
                 <li>
                     <img src="images/img1.jpg" alt="image">
                     <div class="caption center-align">
@@ -83,7 +82,7 @@
                     </div>
                 </li>
                 <li>
-                    <img src="images/ehud-neuhaus-OBnHf24KdRY-unsplash.jpg" alt="">
+                    <img src="images/ehud-neuhaus-OBnHf24KdRY-unsplash.jpg" alt="image">
                     <div class="caption right-align">
                         <h2>Group & Individual Getaways</h2>
                         <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur
@@ -92,8 +91,7 @@
                     </div>
                 </li>
             </ul>
-        </section>
-    
+        </div>
         <!-- Section: Search -->
         <section id="search" class="section section-search darken-1 white-text center scrollspy teal">
             <div class="container">
@@ -101,8 +99,7 @@
                     <div class="col s12">
                         <h3>Search Destinations</h3>
                         <div class="input-field">
-                            <input class="white grey-text autocomplete" placeholder="Niamey, Tillabery, Dosso, etc..." type="text"
-                                id="autocomplete-input">
+                            <input type="text" id="autocomplete-input" class="autocomplete white grey-text" placeholder="Niamey, Tillabery, Dosso, etc...">
                         </div>
                     </div>
                 </div>
@@ -116,21 +113,21 @@
                     <div class="col s12 m4">
                         <div class="card-panel lighten-4">
                             <i class="material-icons large teal-text">location_on</i>
-                            <h4>Pick Where</h4>
+                            <h5>Pick Where</h5>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing.</p>
                         </div>
                     </div>
                     <div class="col s12 m4">
                         <div class="card-panel lighten-4">
                             <i class="material-icons large teal-text ">store</i>
-                            <h4>Travel & Shop</h4>
+                            <h5>Travel & Shop</h5>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing.</p>
                         </div>
                     </div>
                     <div class="col s12 m4">
                         <div class="card-panel lighten-4">
                             <i class="material-icons large teal-text">airplanemode_active</i>
-                            <h4>Fly Cheap</h4>
+                            <h5>Fly Cheap</h5>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing.</p>
                         </div>
                     </div>
@@ -239,7 +236,7 @@
                     </div>
                     <div class="col s12 m3">
                         <img class="materialboxed responsive-img" src="https://source.unsplash.com/1600x900/?beach, travel"
-                            alt="">
+                            alt="image">
                     </div>
                 </div>
     
@@ -324,7 +321,7 @@
                 </div>
             </div>
         </section>
-    
+    </content>
         <!-- Footer -->
         <footer class="section teal white-text center">
             <p id="p-footer" class="flow-text">227voyages Copyright © 2020</p>
@@ -332,47 +329,45 @@
     
     
         <!--IMPORTANT!!! - - - Import jQuery before materialize.js-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script>
-            
+            //menu pour le mobile
+            document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.slider');
+                    var instances = M.Slider.init(elems, options);
+                });
             $(document).ready(function () {
-                // Init Side nav
-                $('.button-collapse').sideNav();
-
-                // Init Slider
-                $('.slider').slider({
-                    indicators: false,
-                    height: 500,
-                    transition: 500,
-                    interval: 6000
-                });
-
-                // Autocomplete
-                $('.autocomplete').autocomplete({
-                    data: {
-                        "Niamey": null,
-                        "Tillabery": null,
-                        "Dosso": null,
-                        "Agadez": null,
-                        "Tahoua": null,
-                        "Diffa": null,
-                        "Maradi": null,
-                        "Zinder": null,
-                        "Cotonou": null,
-                        "Lomé": null,
-                        "Côte d'Ivoire": null,
-                        "Dakar": null,
-                        "Ouagadougou": null
-                    }
-                });
-
-                // Init Scrollspy
-                $('.scrollspy').scrollSpy();
-
+                $('.sidenav').sidenav();
             });
+            //slider
+            $(document).ready(function () {
+                    $('.slider').slider();
+                });
+            //auto complément
+            $(document).ready(function () {
+                    $('input.autocomplete').autocomplete({
+                        data: {
+                            "Niamey": null,
+                            "Tillabery": null,
+                            "Dosso": null,
+                            "Agadez": null,
+                            "Tahoua": null,
+                            "Diffa": null,
+                            "Maradi": null,
+                            "Zinder": null,
+                            "Cotonou": null,
+                            "Lomé": null,
+                            "Côte d'Ivoire": null,
+                            "Dakar": null,
+                            "Ouagadougou": null
+                        },
+                    });
+                });
+                $(document).ready(function () {
+                        $('.scrollspy').scrollSpy();
+                    });
         </script>
- 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
